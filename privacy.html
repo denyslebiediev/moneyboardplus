@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO: enable once the App Store ID exists:
+    <meta name="apple-itunes-app" content="app-id=REPLACE_WITH_APP_STORE_ID"> -->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/app-icon.svg">
+    <link rel="manifest" href="site.webmanifest">
+    <title>Privacy Policy - Money Board Plus</title>
+    <meta name="description" content="Privacy Policy for Money Board Plus.">
+    <link rel="canonical" href="https://denyslebiediev.github.io/moneyboardplus/privacy.html">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/subpage.css">
+</head>
+<body>
+
+<!-- Nav -->
+<nav>
+    <div class="nav-inner">
+        <a class="nav-title" href="index.html">Money Board Plus</a>
+        <ul class="nav-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="page">
+
+    <!-- Hero -->
+    <div class="hero fade-in">
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">A short introductory line about how Money Board Plus handles your data.</p>
+    </div>
+
+    <!-- Content Cards — TODO: replace all placeholder copy with the real policy -->
+    <div class="stagger">
+
+        <div class="content-card fade-in">
+            <h2>Summary</h2>
+            <p>Placeholder summary. Briefly describe, in plain language, what data the app does and does not collect. Replace this text with your real privacy summary.</p>
+        </div>
+
+        <div class="content-card fade-in">
+            <h2>Information We Collect</h2>
+            <p>Placeholder. List the categories of information collected (if any) and why. Replace this text with real content.</p>
+            <ul>
+                <li>Placeholder data category one.</li>
+                <li>Placeholder data category two.</li>
+                <li>Placeholder data category three.</li>
+            </ul>
+        </div>
+
+        <div class="content-card fade-in">
+            <h2>Third-Party Services</h2>
+            <p>Placeholder. Name any third-party services the app relies on (for example, the App Store for purchases) and what each receives. Replace this text with real content.</p>
+        </div>
+
+        <div class="content-card fade-in">
+            <h2>Data Retention &amp; Your Rights</h2>
+            <p>Placeholder. Explain how long data is kept and the rights users have to access, correct, or delete it. Replace this text with real content.</p>
+        </div>
+
+        <div class="content-card fade-in">
+            <h2>Changes to This Policy</h2>
+            <p>Placeholder. Note that the policy may be updated and that the current version always lives at this URL. Replace this text with real content.</p>
+        </div>
+
+        <div class="content-card fade-in">
+            <h2>Contact</h2>
+            <!-- TODO: confirm the support email address -->
+            <p>Questions about this Privacy Policy? Write to <a href="mailto:moneyboardplus.help@gmail.com">moneyboardplus.help@gmail.com</a>.</p>
+        </div>
+
+    </div>
+
+    <!-- Links -->
+    <div class="links-section fade-in">
+        <a class="link-card" href="support.html">
+            <p class="link-label">Help</p>
+            <p class="link-title">Support</p>
+        </a>
+        <a class="link-card" href="terms.html">
+            <p class="link-label">Legal</p>
+            <p class="link-title">Terms of Use</p>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer fade-in">
+        <!-- TODO: update on publish -->
+        <p>Last updated: July 2026</p>
+    </div>
+
+</div>
+
+<script>
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

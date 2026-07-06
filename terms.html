@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO: enable once the App Store ID exists:
+    <meta name="apple-itunes-app" content="app-id=REPLACE_WITH_APP_STORE_ID"> -->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/app-icon.svg">
+    <link rel="manifest" href="site.webmanifest">
+    <title>Terms of Use - Money Board Plus</title>
+    <meta name="description" content="Terms of Use for Money Board Plus.">
+    <link rel="canonical" href="https://denyslebiediev.github.io/moneyboardplus/terms.html">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/subpage.css">
+</head>
+<body>
+
+<!-- Nav -->
+<nav>
+    <div class="nav-inner">
+        <a class="nav-title" href="index.html">Money Board Plus</a>
+        <ul class="nav-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="page">
+
+    <!-- Hero -->
+    <div class="hero fade-in">
+        <h1>Terms of Use</h1>
+        <p class="subtitle">Money Board Plus for iPhone and iPad</p>
+    </div>
+
+    <!-- Content Cards — TODO: replace all placeholder copy with the real terms -->
+    <div class="stagger">
+
+        <div class="content-card fade-in">
+            <h2>Agreement</h2>
+            <p>Placeholder. State that by using the app the user accepts these Terms and the Privacy Policy. Replace this text with real content.</p>
+        </div>
+
+        <div class="content-card fade-in">
+            <h2>License</h2>
+            <p>Placeholder. Describe the license granted to use the app on the user's devices. Replace this text with real content.</p>
+        </div>
+
+        <div class="content-card fade-in">
+            <h2>Subscriptions &amp; Purchases</h2>
+            <p>Placeholder. Describe any in-app purchases or subscriptions, billing, auto-renewal, and how to manage or cancel them through the App Store. Replace this text with real content.</p>
+        </div>
+
+        <div class="content-card fade-in">
+            <h2>Acceptable Use</h2>
+            <p>Placeholder. Outline what users may and may not do with the app. Replace this text with real content.</p>
+            <ul>
+                <li>Placeholder rule one.</li>
+                <li>Placeholder rule two.</li>
+                <li>Placeholder rule three.</li>
+            </ul>
+        </div>
+
+        <div class="content-card fade-in">
+            <h2>Disclaimer &amp; Limitation of Liability</h2>
+            <p>Placeholder. Include the standard "as is" disclaimer and limitation of liability. Replace this text with real content.</p>
+        </div>
+
+        <div class="content-card fade-in">
+            <h2>Changes</h2>
+            <p>Placeholder. Note that these Terms may change and that the current version always lives at this URL. Replace this text with real content.</p>
+        </div>
+
+        <div class="content-card fade-in">
+            <h2>Contact</h2>
+            <!-- TODO: confirm the support email address -->
+            <p>Questions about these Terms? Write to <a href="mailto:moneyboardplus.help@gmail.com">moneyboardplus.help@gmail.com</a>.</p>
+        </div>
+
+    </div>
+
+    <!-- Links -->
+    <div class="links-section fade-in">
+        <a class="link-card" href="support.html">
+            <p class="link-label">Help</p>
+            <p class="link-title">Support</p>
+        </a>
+        <a class="link-card" href="privacy.html">
+            <p class="link-label">Legal</p>
+            <p class="link-title">Privacy Policy</p>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer fade-in">
+        <!-- TODO: update on publish -->
+        <p>Last updated: July 2026</p>
+    </div>
+
+</div>
+
+<script>
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

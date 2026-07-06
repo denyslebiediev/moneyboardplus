@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO: enable once the App Store ID exists (a wrong id renders a broken Smart App Banner):
+    <meta name="apple-itunes-app" content="app-id=REPLACE_WITH_APP_STORE_ID"> -->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/app-icon.svg">
+    <link rel="manifest" href="site.webmanifest">
+    <title>Money Board Plus</title>
+    <!-- TODO: replace description with the real app description -->
+    <meta name="description" content="Money Board Plus for iPhone and iPad. A short description of the app goes here.">
+    <meta property="og:title" content="Money Board Plus">
+    <meta property="og:description" content="Money Board Plus for iPhone and iPad. A short description of the app goes here.">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://denyslebiediev.github.io/moneyboardplus/">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/landing.css">
+</head>
+<body>
+
+<!-- Nav -->
+<nav>
+    <div class="nav-inner">
+        <a class="nav-title" href="index.html">Money Board Plus</a>
+        <ul class="nav-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <img class="app-icon" src="images/app-icon.svg" alt="Money Board Plus app icon">
+    <!-- TODO: replace headline / subtitle with real marketing copy -->
+    <h1>Money Board Plus</h1>
+    <p class="subtitle">Your one-line app tagline goes here.</p>
+    <div class="cta-group">
+        <!-- TODO: point href at the real App Store listing -->
+        <a class="badge-link" href="#" aria-label="Download on the App Store">
+            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
+        </a>
+    </div>
+    <p class="availability">Available on iPhone and iPad. Requires iOS 16 or later.</p>
+</section>
+
+<!-- Features -->
+<section id="features" style="background: var(--bg-secondary);">
+    <div class="section-inner fade-in">
+        <p class="section-eyebrow">Features</p>
+        <!-- TODO: replace headline + intro -->
+        <h2 class="section-headline">A short section headline.</h2>
+        <p class="section-body">One or two sentences introducing what the app does and why it matters.</p>
+        <div class="feature-grid">
+
+            <!-- TODO: replace each feature card (icon, title, description) -->
+            <div class="feature-card">
+                <span class="card-icon" aria-hidden="true">&#128202;</span>
+                <h3>Feature one</h3>
+                <p>A short description of this feature goes here. One or two sentences is plenty.</p>
+            </div>
+
+            <div class="feature-card">
+                <span class="card-icon" aria-hidden="true">&#128179;</span>
+                <h3>Feature two</h3>
+                <p>A short description of this feature goes here. One or two sentences is plenty.</p>
+            </div>
+
+            <div class="feature-card">
+                <span class="card-icon" aria-hidden="true">&#128200;</span>
+                <h3>Feature three</h3>
+                <p>A short description of this feature goes here. One or two sentences is plenty.</p>
+            </div>
+
+            <div class="feature-card">
+                <span class="card-icon" aria-hidden="true">&#128274;</span>
+                <h3>Feature four</h3>
+                <p>A short description of this feature goes here. One or two sentences is plenty.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Highlights -->
+<section>
+    <div class="section-inner fade-in">
+        <p class="section-eyebrow">Highlights</p>
+        <!-- TODO: replace headline + the two highlight cards -->
+        <h2 class="section-headline">Another section headline.</h2>
+        <div class="split-section">
+            <div class="split-card">
+                <h3>Highlight one</h3>
+                <p>A short paragraph describing a key part of the app. Replace this placeholder text with real copy later.</p>
+            </div>
+            <div class="split-card">
+                <h3>Highlight two</h3>
+                <p>A short paragraph describing a key part of the app. Replace this placeholder text with real copy later.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bottom CTA -->
+<section class="bottom-cta">
+    <!-- TODO: replace closing headline -->
+    <h2>Get started today.</h2>
+    <div class="cta-group">
+        <a class="badge-link" href="#" aria-label="Download on the App Store">
+            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-inner">
+        <span class="copyright">© 2026 Denys Lebiediev</span>
+        <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script>
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

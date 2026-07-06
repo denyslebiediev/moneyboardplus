@@ -1,0 +1,13 @@
+<!-- TODO: placeholder favicon — replace with the real Money Board Plus favicon set before launch -->
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mb-fav" x1="0" y1="0" x2="0" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2997ff"/>
+      <stop offset="1" stop-color="#0071e3"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="7" fill="url(#mb-fav)"/>
+  <rect x="8"  y="18" width="4" height="7"  rx="1.5" fill="#fff"/>
+  <rect x="14" y="14" width="4" height="11" rx="1.5" fill="#fff"/>
+  <rect x="20" y="10" width="4" height="15" rx="1.5" fill="#fff"/>
+</svg>
