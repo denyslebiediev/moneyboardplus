@@ -17,7 +17,7 @@ Money Board Plus is an app for iPhone and iPad. A short paragraph describing the
 </p>
 
 <p align="center">
-  <a href="https://denyslebiediev.github.io/moneyboardplus/">Website</a> · <a href="#">App Store</a> · <a href="mailto:moneyboardplus.help@gmail.com">Support</a>
+  <a href="https://denyslebiediev.github.io/moneyboardplus/">Website</a> · <a href="https://apps.apple.com/app/id6774750345">App Store</a> · <a href="mailto:moneyboardplus.help@gmail.com">Support</a>
 </p>
 
 <p align="center">© 2026 Denys Lebiediev</p>
