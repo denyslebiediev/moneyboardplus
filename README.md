@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/app-icon.svg" width="128" height="128" alt="Money Board Plus">
+  <img src="images/AppIcon.png" width="128" height="128" alt="Money Board Plus">
 </p>
 
 <h1 align="center">Money Board Plus</h1>
