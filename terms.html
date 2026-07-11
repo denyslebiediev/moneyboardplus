@@ -12,15 +12,24 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <title>Terms of Use - Money Board Plus</title>
-    <meta name="description" content="Terms of Use for Money Board Plus.">
+    <meta name="description" content="Terms of Use for Money Board Plus, the private budgeting app for iPhone — license, purchases, acceptable use, and liability.">
     <link rel="canonical" href="https://denyslebiediev.github.io/moneyboardplus/terms.html">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/subpage.css">
+    <noscript><style>
+        .fade-in { opacity: 1; transform: none; }
+        nav.at-top { background: rgba(255, 255, 255, 0.72); border-bottom-color: rgba(0, 0, 0, 0.1); }
+        @media (prefers-color-scheme: dark) {
+            nav.at-top { background: rgba(0, 0, 0, 0.72); border-bottom-color: rgba(255, 255, 255, 0.1); }
+        }
+    </style></noscript>
 </head>
 <body>
 
+<div class="nav-sentinel" aria-hidden="true"></div>
+
 <!-- Nav -->
-<nav>
+<nav class="at-top">
     <div class="nav-inner">
         <a class="nav-title" href="index.html">Money Board Plus</a>
         <ul class="nav-links">
@@ -34,52 +43,52 @@
 <div class="page">
 
     <!-- Hero -->
-    <div class="hero fade-in">
+    <div class="hero">
         <h1>Terms of Use</h1>
-        <p class="subtitle">Money Board Plus for iPhone and iPad</p>
+        <p class="subtitle">Money Board Plus for iPhone</p>
     </div>
 
-    <!-- Content Cards — TODO: replace all placeholder copy with the real terms -->
+    <!-- Content Cards -->
     <div class="stagger">
 
         <div class="content-card fade-in">
             <h2>Agreement</h2>
-            <p>Placeholder. State that by using the app the user accepts these Terms and the Privacy Policy. Replace this text with real content.</p>
+            <p class="lede">These Terms of Use govern your use of the Money Board Plus app ("the app"). By downloading or using the app, you agree to these Terms and to our <a href="privacy.html">Privacy Policy</a>. If you do not agree, please do not use the app.</p>
         </div>
 
         <div class="content-card fade-in">
             <h2>License</h2>
-            <p>Placeholder. Describe the license granted to use the app on the user's devices. Replace this text with real content.</p>
+            <p>The developer grants you a personal, non-exclusive, non-transferable, revocable license to use the app on Apple devices you own or control, consistent with the Apple Media Services Terms and Conditions. You may not copy, modify, reverse-engineer, redistribute, or resell the app except as permitted by law.</p>
         </div>
 
         <div class="content-card fade-in">
             <h2>Subscriptions &amp; Purchases</h2>
-            <p>Placeholder. Describe any in-app purchases or subscriptions, billing, auto-renewal, and how to manage or cancel them through the App Store. Replace this text with real content.</p>
+            <p>Money Board Plus is currently offered free of charge and contains no in-app purchases. If paid features or subscriptions are introduced in the future, their price and terms will be shown before you buy, and any purchase will be billed to your Apple Account. Auto-renewing subscriptions, if offered, renew unless canceled at least 24 hours before the end of the current period; you can view, manage, or cancel purchases at any time in your App Store account settings. All payments are processed by Apple, not by us.</p>
         </div>
 
         <div class="content-card fade-in">
             <h2>Acceptable Use</h2>
-            <p>Placeholder. Outline what users may and may not do with the app. Replace this text with real content.</p>
+            <p>You agree to use Money Board Plus only for lawful, personal purposes. You are responsible for the accuracy of the information you enter and for keeping your own device secure.</p>
             <ul>
-                <li>Placeholder rule one.</li>
-                <li>Placeholder rule two.</li>
-                <li>Placeholder rule three.</li>
+                <li>Do not use the app in any unlawful way or in violation of Apple's terms.</li>
+                <li>Do not attempt to disrupt, reverse-engineer, or circumvent the security of the app.</li>
+                <li>The app is a personal budgeting tool, not a substitute for professional financial, tax, or investment advice.</li>
             </ul>
         </div>
 
         <div class="content-card fade-in">
             <h2>Disclaimer &amp; Limitation of Liability</h2>
-            <p>Placeholder. Include the standard "as is" disclaimer and limitation of liability. Replace this text with real content.</p>
+            <p>Money Board Plus is provided "as is" and "as available," without warranties of any kind, whether express or implied. It is a personal money-management tool and does not provide financial, investment, tax, or legal advice; any decisions you make based on the app are your own responsibility, and you should verify important figures yourself.</p>
+            <p>To the fullest extent permitted by law, the developer is not liable for any indirect, incidental, or consequential damages, or for any loss of data, arising from your use of the app. Because your data is stored only on your device, keeping your own backups is your responsibility.</p>
         </div>
 
         <div class="content-card fade-in">
             <h2>Changes</h2>
-            <p>Placeholder. Note that these Terms may change and that the current version always lives at this URL. Replace this text with real content.</p>
+            <p>We may update these Terms from time to time. The current version will always be available at this URL, and the date below shows when it last changed. Continuing to use the app after an update means you accept the revised Terms.</p>
         </div>
 
         <div class="content-card fade-in">
             <h2>Contact</h2>
-            <!-- TODO: confirm the support email address -->
             <p>Questions about these Terms? Write to <a href="mailto:moneyboardplus.help@gmail.com">moneyboardplus.help@gmail.com</a>.</p>
         </div>
 
@@ -97,13 +106,24 @@
         </a>
     </div>
 
-    <!-- Footer -->
+    <!-- Last updated -->
     <div class="footer fade-in">
-        <!-- TODO: update on publish -->
-        <p>Last updated: July 2026</p>
+        <p>Last updated: July 11, 2026</p>
     </div>
 
 </div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-inner">
+        <span class="copyright">© 2026 Denys Lebiediev</span>
+        <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    </div>
+</footer>
 
 <script>
     // Fade-in on scroll
@@ -117,6 +137,12 @@
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Nav: transparent at the very top, frosted once scrolled
+    const nav = document.querySelector('nav');
+    new IntersectionObserver(([entry]) => {
+        nav.classList.toggle('at-top', entry.isIntersecting);
+    }).observe(document.querySelector('.nav-sentinel'));
 </script>
 
 </body>

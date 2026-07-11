@@ -11,20 +11,30 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
-    <title>Money Board Plus</title>
-    <!-- TODO: replace description with the real app description -->
-    <meta name="description" content="Money Board Plus for iPhone and iPad. A short description of the app goes here.">
-    <meta property="og:title" content="Money Board Plus">
-    <meta property="og:description" content="Money Board Plus for iPhone and iPad. A short description of the app goes here.">
+    <title>Money Board Plus — Private Budgeting for iPhone</title>
+    <meta name="description" content="Private budgeting for iPhone. Track spending, budgets, and savings goals on a board you design. No account, no tracking — your data stays on your device.">
+    <meta property="og:title" content="Money Board Plus — Private Budgeting for iPhone">
+    <meta property="og:description" content="Private budgeting for iPhone. Track spending, budgets, and savings goals on a board you design. No account, no tracking — your data stays on your device.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://denyslebiediev.github.io/moneyboardplus/">
+    <meta property="og:image" content="https://denyslebiediev.github.io/moneyboardplus/images/icon-512.png">
     <link rel="canonical" href="https://denyslebiediev.github.io/moneyboardplus/">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/landing.css">
+    <noscript><style>
+        .fade-in { opacity: 1; transform: none; }
+        nav.at-top { background: rgba(255, 255, 255, 0.72); border-bottom-color: rgba(0, 0, 0, 0.1); }
+        @media (prefers-color-scheme: dark) {
+            nav.at-top { background: rgba(0, 0, 0, 0.72); border-bottom-color: rgba(255, 255, 255, 0.1); }
+        }
+    </style></noscript>
 </head>
 <body>
 
+<div class="nav-sentinel" aria-hidden="true"></div>
+
 <!-- Nav -->
-<nav>
+<nav class="at-top">
     <div class="nav-inner">
         <a class="nav-title" href="index.html">Money Board Plus</a>
         <ul class="nav-links">
@@ -37,53 +47,110 @@
 
 <!-- Hero -->
 <section class="hero">
-    <img class="app-icon" src="images/AppIcon.png" alt="Money Board Plus app icon">
-    <!-- TODO: replace headline / subtitle with real marketing copy -->
-    <h1>Money Board Plus</h1>
-    <p class="subtitle">Your one-line app tagline goes here.</p>
+    <div class="icon-wrap">
+        <img class="app-icon" src="images/AppIcon.png" alt="Money Board Plus app icon" width="144" height="144">
+    </div>
+    <h1>Money Board Plus.<br><span class="gradient-text">Private by design.</span></h1>
+    <p class="subtitle">Track spending, budgets, and savings goals on a board you design — stored entirely on your iPhone, with nothing collected and nothing shared.</p>
     <div class="cta-group">
         <a class="badge-link" href="https://apps.apple.com/app/id6774750345" aria-label="Download on the App Store">
-            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
+            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="250" height="83">
         </a>
     </div>
-    <p class="availability">Available on iPhone and iPad. Requires iOS 16 or later.</p>
+    <p class="availability">Available for iPhone. Requires iOS 26 or later.</p>
 </section>
 
 <!-- Features -->
-<section id="features" style="background: var(--bg-secondary);">
+<section id="features" class="tinted-section">
     <div class="section-inner fade-in">
         <p class="section-eyebrow">Features</p>
-        <!-- TODO: replace headline + intro -->
-        <h2 class="section-headline">A short section headline.</h2>
-        <p class="section-body">One or two sentences introducing what the app does and why it matters.</p>
-        <div class="feature-grid">
+        <h2 class="section-headline">Everything you need. Nothing watching over your shoulder.</h2>
+        <p class="section-body">Money Board Plus keeps the essentials of personal finance — tracking, budgets, goals, and insights — in one place, working entirely offline.</p>
+        <div class="feature-grid stagger">
 
-            <!-- TODO: replace each feature card (icon, title, description) -->
-            <div class="feature-card">
-                <span class="card-icon" aria-hidden="true">&#128202;</span>
-                <h3>Feature one</h3>
-                <p>A short description of this feature goes here. One or two sentences is plenty.</p>
+            <div class="feature-card fade-in">
+                <span class="card-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3.75" y="3.75" width="7" height="7" rx="2"/><rect x="13.25" y="3.75" width="7" height="7" rx="2"/><rect x="3.75" y="13.25" width="7" height="7" rx="2"/><rect x="13.25" y="13.25" width="7" height="7" rx="2"/></svg>
+                </span>
+                <h3>Your board, your way</h3>
+                <p>Add, remove, and rearrange widgets — spend rings, cash flow, categories, recent transactions, quick add — so what matters to you is always front and center.</p>
             </div>
 
-            <div class="feature-card">
-                <span class="card-icon" aria-hidden="true">&#128179;</span>
-                <h3>Feature two</h3>
-                <p>A short description of this feature goes here. One or two sentences is plenty.</p>
+            <div class="feature-card fade-in">
+                <span class="card-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 15a8.25 8.25 0 1 1 15 0"/><path d="M12 15.75 15.5 10.5"/><circle cx="12" cy="16" r="0.75" fill="currentColor"/></svg>
+                </span>
+                <h3>Budgets that speak up</h3>
+                <p>Set a monthly limit for any category. The app shows how much you have used and warns you as you approach or pass it.</p>
             </div>
 
-            <div class="feature-card">
-                <span class="card-icon" aria-hidden="true">&#128200;</span>
-                <h3>Feature three</h3>
-                <p>A short description of this feature goes here. One or two sentences is plenty.</p>
+            <div class="feature-card fade-in">
+                <span class="card-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5.25 21V4.5"/><path d="M5.25 4.5c4-2.4 8.5 2.4 12.5 0v9c-4 2.4-8.5-2.4-12.5 0"/></svg>
+                </span>
+                <h3>Savings goals</h3>
+                <p>Set a target, log contributions, and watch progress build toward the things you are saving for.</p>
             </div>
 
-            <div class="feature-card">
-                <span class="card-icon" aria-hidden="true">&#128274;</span>
-                <h3>Feature four</h3>
-                <p>A short description of this feature goes here. One or two sentences is plenty.</p>
+            <div class="feature-card fade-in">
+                <span class="card-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.75 20.25h16.5"/><path d="M6.5 20.25V13"/><path d="M12 20.25V8"/><path d="M17.5 20.25V4.5"/></svg>
+                </span>
+                <h3>Charts and insights</h3>
+                <p>Spending by category, trends over time, and month-to-date cash flow — all at a glance.</p>
+            </div>
+
+            <div class="feature-card fade-in">
+                <span class="card-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5.25" y="10.5" width="13.5" height="9.75" rx="2.5"/><path d="M8.25 10.5V7.875a3.75 3.75 0 0 1 7.5 0V10.5"/></svg>
+                </span>
+                <h3>App Lock</h3>
+                <p>Face ID, Touch ID, or your passcode before the app opens — handled entirely by iOS.</p>
+            </div>
+
+            <div class="feature-card fade-in">
+                <span class="card-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12s3.25-5.25 9-5.25S21 12 21 12s-3.25 5.25-9 5.25S3 12 3 12Z"/><circle cx="12" cy="12" r="2.5"/><path d="M4.5 19.5 19.5 4.5"/></svg>
+                </span>
+                <h3>Hide Balances</h3>
+                <p>One tap redacts every amount on screen — budget in public without broadcasting your balance.</p>
             </div>
 
         </div>
+    </div>
+</section>
+
+<!-- Privacy -->
+<section class="privacy-section">
+    <div class="section-inner fade-in">
+        <p class="section-eyebrow">Privacy</p>
+        <h2 class="section-headline">Your finances <span class="gradient-text">stay on your iPhone.</span></h2>
+        <p class="section-body">There is no account, no analytics, no ads, and no third-party code. The app makes no network connections of its own — everything you enter is encrypted at rest on your iPhone, and you can erase it in one tap.</p>
+        <div class="privacy-grid stagger">
+            <div class="privacy-item fade-in">
+                <span class="item-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.75"/><path d="M5.25 19.5a6.75 6.75 0 0 1 13.5 0"/></svg>
+                </span>
+                <h3>No account</h3>
+                <p>Nothing to sign up for, ever.</p>
+            </div>
+            <div class="privacy-item fade-in">
+                <span class="item-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.75c2.5 1.5 5 2.25 7 2.25 0 7.5-2.5 12-7 14.25-4.5-2.25-7-6.75-7-14.25 2 0 4.5-.75 7-2.25Z"/><path d="m9.25 12 2 2 3.5-3.5"/></svg>
+                </span>
+                <h3>No tracking</h3>
+                <p>No analytics, no ads, no trackers.</p>
+            </div>
+            <div class="privacy-item fade-in">
+                <span class="item-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4 4 0 0 1-.6-7.96 5.5 5.5 0 0 1 10.7-1.2A4.5 4.5 0 0 1 16.5 18H7Z"/><path d="M4.5 20 19.5 5"/></svg>
+                </span>
+                <h3>No servers</h3>
+                <p>The app makes no network connections.</p>
+            </div>
+        </div>
+        <p class="privacy-footnote">App Store privacy label: Data Not Collected.</p>
+        <a class="privacy-link" href="privacy.html">Read the full Privacy Policy</a>
     </div>
 </section>
 
@@ -91,16 +158,15 @@
 <section>
     <div class="section-inner fade-in">
         <p class="section-eyebrow">Highlights</p>
-        <!-- TODO: replace headline + the two highlight cards -->
-        <h2 class="section-headline">Another section headline.</h2>
+        <h2 class="section-headline">Built for awareness, not surveillance.</h2>
         <div class="split-section">
             <div class="split-card">
-                <h3>Highlight one</h3>
-                <p>A short paragraph describing a key part of the app. Replace this placeholder text with real copy later.</p>
+                <h3>Manual by design.</h3>
+                <p>You enter every transaction yourself — no bank linking, no imports. Logging by hand keeps you honest and aware of where your money actually goes.</p>
             </div>
             <div class="split-card">
-                <h3>Highlight two</h3>
-                <p>A short paragraph describing a key part of the app. Replace this placeholder text with real copy later.</p>
+                <h3>Gentle reminders.</h3>
+                <p>An optional daily nudge to log your spending, and alerts when a budget nears its limit — created and delivered entirely on your device.</p>
             </div>
         </div>
     </div>
@@ -108,12 +174,14 @@
 
 <!-- Bottom CTA -->
 <section class="bottom-cta">
-    <!-- TODO: replace closing headline -->
-    <h2>Get started today.</h2>
-    <div class="cta-group">
-        <a class="badge-link" href="https://apps.apple.com/app/id6774750345" aria-label="Download on the App Store">
-            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
-        </a>
+    <div class="fade-in">
+        <h2>Take control of your money — <span class="gradient-text">privately.</span></h2>
+        <div class="cta-group">
+            <a class="badge-link" href="https://apps.apple.com/app/id6774750345" aria-label="Download on the App Store">
+                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="250" height="83" loading="lazy">
+            </a>
+        </div>
+        <p class="availability">Free on the App Store. Requires iOS 26 or later.</p>
     </div>
 </section>
 
@@ -141,6 +209,12 @@
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Nav: transparent at the very top, frosted once scrolled
+    const nav = document.querySelector('nav');
+    new IntersectionObserver(([entry]) => {
+        nav.classList.toggle('at-top', entry.isIntersecting);
+    }).observe(document.querySelector('.nav-sentinel'));
 </script>
 
 </body>
