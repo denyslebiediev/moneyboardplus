@@ -5,15 +5,17 @@
 <h1 align="center">Money Board Plus</h1>
 
 <p align="center">
-  <!-- TODO: replace with the real tagline -->
-  Your one-line app tagline goes here.
+  Private budgeting for iPhone.
 </p>
 
 ---
 
 <p align="center">
-<!-- TODO: replace with the real app description -->
-Money Board Plus is an app for iPhone and iPad. A short paragraph describing the app goes here — replace this placeholder before launch.
+Money Board Plus is a personal-finance app for iPhone. Track spending, set monthly budgets, and work toward savings goals on a home board you arrange yourself. There is no account and no tracking — your data stays on your iPhone and syncs through your own private iCloud.
+</p>
+
+<p align="center">
+This repository holds the app's marketing, legal, and support website, published with GitHub Pages.
 </p>
 
 <p align="center">
